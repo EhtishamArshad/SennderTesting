@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Movies List</title>
+</head>
+<body>
+<h1>Movies List</h1>
+<p>Following is the list of movies and their cast</p>
+{% for result in results%}
+<ul>
+    <li>
+        <b>{{result['movie']}}</b>
+        {% for item in result['cast'] %}
+        <ul>
+            <li>{{item}}</li>
+        </ul>
+        {% endfor %}
+    </li>
+</ul>
+{% endfor %}
+</body>
+</html>
