@@ -46,6 +46,10 @@ Windows
 python app.py
 ```
 
+The application will be served on ```http://localhost:8000/```
+
+The movies list will be served on ```http://localhost:8000/movies```
+
 <h4>Testing</h4>
 
 In order to run test, install the following dependency:
